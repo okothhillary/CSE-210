@@ -13,7 +13,7 @@ class Program
 
         {
 
-            Console.Write("Guess a single digit number: ");
+            Console.Write("Guess a number: ");
             reply = int.Parse(Console.ReadLine());
 
             
