@@ -24,7 +24,7 @@ class Program
             }
             else if (userOption == 2){
                 // Option 2: showing previous recordings
-                Console.WriteLine();
+                Console.WriteLine("");
                 journal.DisplayJournal();
 
                 Console.WriteLine("");

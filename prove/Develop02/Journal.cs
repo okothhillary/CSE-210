@@ -50,7 +50,7 @@ public class Journal
     }
     public void SaveFile()
     {
-        Console.Write("Give today's recording a name or will you whine about that as well: ");
+        Console.Write("Give today's recording a name or will you complain about that as well: ");
         string fileName = Console.ReadLine();
 
         using (StreamWriter outputFile = new StreamWriter(fileName)){
@@ -64,7 +64,7 @@ public class Journal
         
         _entriesList.Clear();
 
-        Console.Write("Give today's recording a name, or will you whine about this as well: ");
+        Console.Write("Name of that recording that you want to view: ");
         string fileName = Console.ReadLine();
         string[] lines = System.IO.File.ReadAllLines(fileName);
 
