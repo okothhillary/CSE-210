@@ -1,4 +1,6 @@
+using System;
 using System.IO;
+
 public class Journal
 {
     public List<Entry> _entriesList = new List<Entry>();
