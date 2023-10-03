@@ -31,9 +31,6 @@ class Program
                 Console.WriteLine("You guessed the right number!");
             }   
                         
-        }
-        
-
-        
+        }       
     }
 }
