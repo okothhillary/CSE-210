@@ -14,8 +14,9 @@ class Program
         Journal journal = new Journal();
 
         // The user keeps choosing until they decide to quit. While-loop.
-        bool ind = true;
-        while (ind){
+        bool status = true;
+        while (status)
+        {
             if (userOption == 1){
                 // Option 1: new entry
                 journal.WriteNewEntry();
@@ -71,7 +72,8 @@ class Program
         
     }
 
-    static int DisplayMenu(){
+    static int DisplayMenu()
+    {
         List<string> menu = new List<string>();
         // Menu Options:
         menu.Add("1. Record some new thoughts and feelings");
