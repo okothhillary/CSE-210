@@ -17,14 +17,16 @@ class Program
         bool status = true;
         while (status)
         {
-            if (userOption == 1){
+            if (userOption == 1)
+            {
                 // Option 1: new entry
                 journal.WriteNewEntry();
                 
                 Console.WriteLine($"\nDo you want to do something else?");
                 userOption = DisplayMenu();
             }
-            else if (userOption == 2){
+            else if (userOption == 2)
+            {
                 // Option 2: showing previous recordings
                 Console.WriteLine("");
                 journal.DisplayJournal();
@@ -32,7 +34,8 @@ class Program
                 Console.WriteLine("");
                 userOption = DisplayMenu();
             }
-            else if (userOption == 3){
+            else if (userOption == 3)
+            {
                 // Option 3: load journal
                 journal.LoadFile();
 
@@ -40,7 +43,8 @@ class Program
                 Console.WriteLine("Anything else that you'd need to do?");
                 userOption = DisplayMenu();
             }
-            else if (userOption == 4){
+            else if (userOption == 4)
+            {
                 // Option 4: save all entries
                 journal.SaveFile();             
 
@@ -48,7 +52,8 @@ class Program
                 Console.WriteLine("Anything other than sweet memory to save...(not about your ex's)");
                 userOption = DisplayMenu();
             }
-            else if (userOption == 5){
+            else if (userOption == 5)
+            {
                 // Option 5: exit after saving
                 Console.WriteLine("We can close the recordings after you have SAVED them. You must save.");
                 Console.Write("Type Yes or No ");
@@ -60,7 +65,8 @@ class Program
                     userOption = DisplayMenu();
                 }
             }
-            else {
+            else 
+            {
                 // In case the choice is not in the list:
                 Console.Write("Nope! No 'agency' today, you can only choose what's there. Try again ");
                 userOption = int.Parse(Console.ReadLine());
