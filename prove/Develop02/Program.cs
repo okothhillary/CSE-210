@@ -58,7 +58,8 @@ class Program
                 Console.WriteLine("We can close the recordings after you have SAVED them. You must save.");
                 Console.Write("Type Yes or No ");
                 string close_Option = Console.ReadLine();
-                if (close_Option.ToLower() == "yes" || close_Option.ToLower() == "y"){
+                if (close_Option.ToLower() == "yes" || close_Option.ToLower() == "y")
+                {
                     break;
                 }
                 else {
