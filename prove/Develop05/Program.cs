@@ -27,9 +27,11 @@ class Program
             Console.WriteLine("  3. Save Goals");
             Console.WriteLine("  4. Load Goals");
             Console.WriteLine("  5. Record Event");
-            Console.WriteLine("  6. Quit");
+            Console.WriteLine("  6. Quit\n ");
             Console.Write("Select a choice from the menu: ");
+            
             userInput = Console.ReadLine();
+
             if (userInput == "1")
             {
                 Console.WriteLine("The types of Goals are: ");
@@ -37,7 +39,9 @@ class Program
                 Console.WriteLine("  2. Eternal Goal");
                 Console.WriteLine("  3. Checklist Goal");
                 Console.Write("Which type of goal would you like to create? ");
+
                 string typeGoal = Console.ReadLine();
+
                 if (typeGoal == "1")
                 {
                     Console.WriteLine("");
