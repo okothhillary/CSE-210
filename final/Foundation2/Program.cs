@@ -6,10 +6,10 @@ class Program
     static void Main(string []args)
     {
         // Create an address
-        Address customerAddress = new Address("123 Main St", "Anytown", "CA", "USA");
+        Address customerAddress = new Address("Some street", "A town", "XY", "USA");
 
         // Create a customer
-        Customer customer = new Customer("John Doe", customerAddress);
+        Customer customer = new Customer("Hill The-Bills", customerAddress);
 
         // Create products
         Product product1 = new Product("Product A", 1, 10.99m, 2);
