@@ -2,19 +2,19 @@ using System;
 
 public class Event
 {
-    private string eventName;
-    private DateTime eventDate;
-    private Address eventLocation;
+    private string _eventName;
+    private DateTime _eventDate;
+    private Address _eventLocation;
 
     public Event(string name, DateTime date, Address location)
     {
-        eventName = name;
-        eventDate = date;
-        eventLocation = location;
+        _eventName = name;
+        _eventDate = date;
+        _eventLocation = location;
     }
 
     public string GetEventDetails()
     {
-        return $"{eventName} on {eventDate.ToShortDateString()} at {eventLocation}";
+        return $"{_eventName} on {_eventDate.ToShortDateString()} at {_eventLocation}";
     }
 }

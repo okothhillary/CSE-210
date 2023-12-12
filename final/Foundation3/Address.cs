@@ -1,37 +1,38 @@
 using System;
+
 public class Address
 {
-    private string street;
-    private string city;
-    private string state;
-    private string zipCode;
+    private string _street;
+    private string _city;
+    private string _state;
+    private string _zipCode;
 
     public string Street
     {
-        get { return street; }
-        set { street = value; }
+        get { return _street; }
+        set { _street = value; }
     }
 
     public string City
     {
-        get { return city; }
-        set { city = value; }
+        get { return _city; }
+        set { _city = value; }
     }
 
     public string State
     {
-        get { return state; }
-        set { state = value; }
+        get { return _state; }
+        set { _state = value; }
     }
 
     public string ZipCode
     {
-        get { return zipCode; }
-        set { zipCode = value; }
+        get { return _zipCode; }
+        set { _zipCode = value; }
     }
 
     public override string ToString()
     {
-        return $"{Street}, {City}, {State} {ZipCode}";
+        return $"{Street}, {City}, {State} {_zipCode}";
     }
 }

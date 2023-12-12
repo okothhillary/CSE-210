@@ -2,16 +2,16 @@ using System;
 
 public class SalesEvent : Event
 {
-    private decimal discountPercentage;
+    private decimal _discountPercentage;
 
     public SalesEvent(string name, DateTime date, Address location, decimal discount)
         : base(name, date, location)
     {
-        discountPercentage = discount;
+        _discountPercentage = discount;
     }
 
     public string GetDiscountMessage()
     {
-        return $"Don't miss out on our {discountPercentage}% off sale at {GetEventDetails()}";
+        return $"Don't miss out on our {_discountPercentage}% off sale at {GetEventDetails()}";
     }
 }
