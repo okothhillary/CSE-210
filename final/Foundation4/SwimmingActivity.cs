@@ -1,22 +1,21 @@
-using System;
-
+// SwimmingActivity.cs
 public class SwimmingActivity : Activity
 {
-    private int laps;
+    private int _laps;
 
     public SwimmingActivity(int laps, double duration)
         : base(0, duration)
     {
-        this.laps = laps;
+        _laps = laps;
     }
 
     public override double GetDistance()
     {
-        return laps * 0.05; // 0.05 kilometers per lap
+        return _laps * 0.05; // 0.05 kilometers per lap
     }
 
     public override string GetSummary()
     {
-        return $"{base.GetSummary()}, Laps: {laps}";
+        return $"{base.GetSummary()}, Laps: {_laps}";
     }
 }
