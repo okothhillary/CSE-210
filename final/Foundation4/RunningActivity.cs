@@ -1,4 +1,5 @@
-// RunningActivity.cs
+using System;
+
 public class RunningActivity : Activity
 {
     private int _steps;
@@ -11,7 +12,7 @@ public class RunningActivity : Activity
 
     public override double GetDistance()
     {
-        // Convert steps to distance (assuming an average step length)
+        // Convert steps to distance. We can use average step length.
         return _steps * 0.000762; // 0.000762 kilometers per step
     }
 

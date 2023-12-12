@@ -8,9 +8,9 @@ class Program
         List<Activity> activities = new List<Activity>();
 
         // Create instances of each activity type
-        RunningActivity runningActivity = new RunningActivity(3, 30, 6000);
-        CyclingActivity cyclingActivity = new CyclingActivity(10, 45, 2000);
-        SwimmingActivity swimmingActivity = new SwimmingActivity(30, 25);
+        RunningActivity runningActivity = new RunningActivity(5, 20, 3000);
+        CyclingActivity cyclingActivity = new CyclingActivity(7, 30, 1800);
+        SwimmingActivity swimmingActivity = new SwimmingActivity(28, 15);
 
         // Add activities to the list
         activities.Add(runningActivity);

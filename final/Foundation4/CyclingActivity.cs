@@ -1,4 +1,5 @@
-// CyclingActivity.cs
+using System;
+
 public class CyclingActivity : Activity
 {
     private int _revolutions;
@@ -11,7 +12,7 @@ public class CyclingActivity : Activity
 
     public override double GetDistance()
     {
-        // Convert revolutions to distance (assuming an average wheel circumference)
+        // Convert revolutions to distance using an average wheel circumference.
         return _revolutions * 0.004; // 0.004 kilometers per revolution
     }
 

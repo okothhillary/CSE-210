@@ -1,4 +1,3 @@
-// Activity.cs
 using System;
 
 public class Activity
